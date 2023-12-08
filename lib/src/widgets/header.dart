@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Header extends StatelessWidget {
-  const Header({super.key});
+class SkimsHeader extends StatelessWidget {
+  const SkimsHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

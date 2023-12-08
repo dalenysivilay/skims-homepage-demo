@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skims_homepage_mock/src/widgets/banner_carousel.dart';
+import 'package:skims_homepage_mock/src/widgets/footer.dart';
 import 'package:skims_homepage_mock/src/widgets/header.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,12 +11,13 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: Header(),
+        child: SkimsHeader(),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             BannerCarousel(),
+            SkimsFooter(),
           ],
         ),
       ),
