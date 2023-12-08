@@ -6,11 +6,11 @@ class CtaButton extends StatelessWidget {
   final bool isDisabled;
 
   const CtaButton({
-    Key? key,
+    super.key,
     required this.text,
     this.onPressed,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

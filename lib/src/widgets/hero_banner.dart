@@ -7,17 +7,18 @@ class HeroBanner extends StatelessWidget {
   final String subtitle;
 
   const HeroBanner({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.subtitle,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
+    const imageHeight = 570.0;
+
     return Container(
-      height: 570,
-      width: double.infinity,
+      height: imageHeight,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(image),
@@ -45,17 +46,20 @@ class HeroBanner extends StatelessWidget {
 }
 
 class HeroBannerContent extends StatelessWidget {
-  const HeroBannerContent({
-    Key? key,
-    required this.title,
-    required this.subtitle,
-  }) : super(key: key);
-
   final String title;
   final String subtitle;
 
+  const HeroBannerContent({
+    super.key,
+    required this.title,
+    required this.subtitle,
+  });
+
   @override
   Widget build(BuildContext context) {
+    const titleFontSize = 30.0;
+    const subTitleFontSize = 16.0;
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,7 +67,7 @@ class HeroBannerContent extends StatelessWidget {
         Text(
           title,
           style: const TextStyle(
-            fontSize: 30,
+            fontSize: titleFontSize,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
@@ -72,7 +76,7 @@ class HeroBannerContent extends StatelessWidget {
         Text(
           subtitle,
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: subTitleFontSize,
             color: Colors.white,
           ),
         ),

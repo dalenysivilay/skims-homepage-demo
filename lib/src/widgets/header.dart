@@ -1,37 +1,84 @@
 import 'package:flutter/material.dart';
-import 'package:skims_homepage_mock/src/widgets/pencil_banner.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        PencilBanner(
-          message: 'FREE SHIPPING ON ALL DOMESTIC ORDERS 75+',
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return SafeArea(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              'SKIMS',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+            Logo(),
+            IconButtonContainer(
+              iconButtons: [
+                IconButtonItem(iconData: Icons.favorite_outline),
+                IconButtonItem(iconData: Icons.shopping_bag_outlined),
+                IconButtonItem(iconData: Icons.menu_outlined),
+              ],
             ),
-            Icon(Icons.search_outlined, size: 30),
-            Icon(Icons.favorite_outline, size: 30),
-            Icon(
-              Icons.shopping_bag_outlined,
-              size: 30,
-            ),
-            Icon(Icons.menu, size: 30),
           ],
         ),
-      ],
+      ),
+    );
+  }
+}
+
+class Logo extends StatelessWidget {
+  const Logo({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: null,
+      child: Image.asset(
+        'assets/images/skims-logo.png',
+        width: 120,
+      ),
+    );
+  }
+}
+
+class IconButtonItem extends StatelessWidget {
+  final IconData iconData;
+
+  const IconButtonItem({
+    super.key,
+    required this.iconData,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: null,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Icon(
+          iconData,
+          size: 24,
+          color: const Color(0xFF625546),
+        ),
+      ),
+    );
+  }
+}
+
+class IconButtonContainer extends StatelessWidget {
+  final List<IconButtonItem> iconButtons;
+
+  const IconButtonContainer({
+    super.key,
+    required this.iconButtons,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: iconButtons,
     );
   }
 }

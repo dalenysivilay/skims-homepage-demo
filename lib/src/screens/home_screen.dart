@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:skims_homepage_mock/src/widgets/banner_carousel.dart';
 import 'package:skims_homepage_mock/src/widgets/header.dart';
-import 'package:skims_homepage_mock/src/widgets/hero_banner.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,20 +9,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(56),
+        preferredSize: Size.fromHeight(100),
         child: Header(),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            Flexible(
-              child: HeroBanner(
-                image: 'assets/images/skims-holiday-home-banner.jpeg',
-                title: 'SKIMS HOLIDAY SHOP',
-                subtitle:
-                    'Over 15 limited-edition collections with something SKIMS for everyone on your list',
-              ),
-            ),
+            BannerCarousel(),
           ],
         ),
       ),
