@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skims_homepage_mock/src/screens/home_screen.dart';
 import 'utils/hex_color.dart';
 
 void main() {
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
           inversePrimary: null,
         ),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomeScreen(),
     );
   }
 }
