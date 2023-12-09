@@ -4,6 +4,7 @@ import 'package:skims_homepage_mock/src/widgets/skims_footer.dart';
 import 'package:skims_homepage_mock/src/widgets/skims_header.dart';
 import 'package:skims_homepage_mock/src/widgets/product_carousel.dart';
 import 'package:skims_homepage_mock/src/widgets/page_section.dart';
+import 'package:skims_homepage_mock/src/widgets/slider_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,6 +32,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      endDrawer: SliderMenu(),
     );
   }
 }
