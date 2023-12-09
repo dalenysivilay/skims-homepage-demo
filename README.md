@@ -1,6 +1,6 @@
 # skims_homepage_demo
 
-A new Flutter project.
+https://github.com/dalenysivilay/skims-homepage-demo/assets/63386559/e4afa768-63d8-47ff-b7c3-2eeccf7bda32
 
 ## Getting Started
 
