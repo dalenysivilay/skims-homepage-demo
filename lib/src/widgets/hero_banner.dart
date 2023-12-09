@@ -82,9 +82,24 @@ class HeroBannerContent extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         CtaButton(
-          text: 'Shop Now',
-          onPressed: () {},
-        ),
+            text: 'Shop Now',
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text(
+                    'Daleny was here! 🫡 <hi@daleny.dev>',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                  behavior: SnackBarBehavior.floating,
+                  backgroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  ),
+                ),
+              );
+            }),
       ],
     );
   }

@@ -94,7 +94,7 @@ class TextSignUpBuilder extends StatelessWidget {
             fontSize: 16,
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Text(
           'By signing up via text, you agree to receive recurring automated promotional and personalized marketing text messages (e.g. cart reminders) from SKIMS at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg & data rates may apply. View Terms & Privacy.',
           textAlign: TextAlign.center,
