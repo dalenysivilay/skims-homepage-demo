@@ -61,15 +61,17 @@ class SocialMediaLinksBuilder extends StatelessWidget {
               color: textColor,
               size: 32,
             ),
-            const SizedBox(width: 20),
-            Icon(
-              Icons.youtube_searched_for_outlined,
-              color: textColor,
-              size: 32,
-            ),
-            const SizedBox(width: 20),
           ],
         ),
+        const SizedBox(height: 20),
+        Text(
+          'Daleny Sivilay was here 🫡 <hi@daleny.dev>',
+          style: TextStyle(
+            color: textColor,
+            fontSize: 14,
+          ),
+        ),
+        const SizedBox(height: 20),
       ],
     );
   }
