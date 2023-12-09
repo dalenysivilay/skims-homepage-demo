@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:skims_homepage_mock/src/widgets/product_card.dart';
-import 'package:skims_homepage_mock/src/models/product_model.dart';
+import 'package:skims_homepage_demo/src/widgets/product_card.dart';
+import 'package:skims_homepage_demo/src/models/product_model.dart';
 
 class ProductCarousel extends StatefulWidget {
   const ProductCarousel({super.key});

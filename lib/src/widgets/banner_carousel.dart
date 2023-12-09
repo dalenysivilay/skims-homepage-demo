@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:skims_homepage_mock/src/models/hero_banner_model.dart';
+import 'package:skims_homepage_demo/src/models/hero_banner_model.dart';
 import 'hero_banner.dart';
 
 class BannerCarousel extends StatefulWidget {

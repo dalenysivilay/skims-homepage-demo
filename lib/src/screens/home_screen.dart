@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:skims_homepage_mock/src/widgets/banner_carousel.dart';
-import 'package:skims_homepage_mock/src/widgets/skims_footer.dart';
-import 'package:skims_homepage_mock/src/widgets/skims_header.dart';
-import 'package:skims_homepage_mock/src/widgets/product_carousel.dart';
-import 'package:skims_homepage_mock/src/widgets/page_section.dart';
-import 'package:skims_homepage_mock/src/widgets/slider_menu.dart';
+import 'package:skims_homepage_demo/src/widgets/banner_carousel.dart';
+import 'package:skims_homepage_demo/src/widgets/skims_footer.dart';
+import 'package:skims_homepage_demo/src/widgets/skims_header.dart';
+import 'package:skims_homepage_demo/src/widgets/product_carousel.dart';
+import 'package:skims_homepage_demo/src/widgets/page_section.dart';
+import 'package:skims_homepage_demo/src/widgets/slider_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

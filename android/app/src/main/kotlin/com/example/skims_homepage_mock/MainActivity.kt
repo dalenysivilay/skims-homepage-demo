@@ -1,4 +1,4 @@
-package com.example.skims_homepage_mock
+package com.example.skims_homepage_demo
 
 import io.flutter.embedding.android.FlutterActivity
 

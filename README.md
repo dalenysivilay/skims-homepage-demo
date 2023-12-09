@@ -1,4 +1,4 @@
-# skims_homepage_mock
+# skims_homepage_demo
 
 A new Flutter project.
 
