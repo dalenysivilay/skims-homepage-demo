@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skims_homepage_mock/src/widgets/cta_button.dart';
+import 'package:skims_homepage_demo/src/widgets/cta_button.dart';
 
 class HeroBanner extends StatelessWidget {
   final String image;
